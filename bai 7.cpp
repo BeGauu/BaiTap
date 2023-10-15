@@ -1,10 +1,6 @@
-#include<stdio.h>
-int main()
+ #include <stdio.h>
 void hoanvi(int &x, int &y);
-{ 
- printf ("hello BeGauu");
-}
-
+ int main()
  {int a, b;
       printf("Nhap a="); 
 	  scanf("%d",&a);

@@ -1,4 +1,5 @@
  #include <stdio.h>
+ #include <conio.h>
 void hoanvi(int &x, int &y);
  int main()
  {int a, b;
