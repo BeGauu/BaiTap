@@ -59,7 +59,7 @@ int  sapxep(int a[50],int n)
 
 { int tam;
 
-    for (int i=0; i<n–1; i++)
+    for (int i=0; i<nâ€“1; i++)
 {
       for (j=i+1; j<n; j++)
 
