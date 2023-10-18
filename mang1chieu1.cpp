@@ -6,6 +6,9 @@ int xuatmang(int a[50],int n);
 int timmax (int a[50],int n);
 int tinhtich(int a[50],int n);
 int sapxep (int a[50],int n);
+int songuyento (int p);
+int tinhtong (int a[50], int n);
+int vitri (int a[], int n);
 int  main()
 
 {  int a[50], n,i ;
@@ -16,6 +19,8 @@ int  main()
      xuatmang(a,n);
      printf("\n Gia tri lon nhat trong mang: \n %d", timmax(a, n));
      printf("\n Tich cac phan tu trong mang: \n %d",tinhtich(a,n));
+     vitri(a,n); 
+     printf ("\n Mang vua sap xep: ");
      sapxep(a,n);
      xuatmang(a,n)
     return 0;
@@ -55,19 +60,54 @@ int tinhtich(int a[50],int n)
     tich=tich*a[i];
     return tich;
 }
-int  sapxep(int a[50],int n)
-
-{ int tam;
-
-    for (int i=0; i<n–1; i++)
+int songuyento(int p) 
 {
-      for (j=i+1; j<n; j++)
+    int i,dem =0;
+    for(i=1; i<p; i++) {
+        if(p%i==0)
+            dem++;
 
+        if(dem==2)
+            return 1;
+        else
+            return 0;
+    }
+}
+int tinhtong(int a[50],int n) 
+{
+    int i, tong=0;
+    for (i=0; i<n; i++)
+	{
+          if (songuyento (a[i])==1)
+		
+            tong=tong + a[i];
+        
+    }
+    return tong;
+	}
+
+int vitri (int a[], int n)
+{
+  int tk;
+  printf ("\n Nhap so can tim: ");
+  scanf ("%d",&tk);
+  for (int i = 0; i < n; i++)
+  {
+  if (a[i] == tk)  
+  printf("Phan tu thu %d ", i);
+   else   
+    printf ("\n Phan khong co trong mang ! ");	
+  }
+getch();
+}
+
+int  sapxep(int a[50],int n)
+{ int tam;
+    for (int i=0; i<n–1; i++)
+      for (int j=i+1; j<n; j++)
      if (a[i] > a[j])
-
    { tam=a[i];
         a[i]=a[j];
          a[j]=tam; 
    }
- }
 }
