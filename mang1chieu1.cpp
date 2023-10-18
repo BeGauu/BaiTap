@@ -23,6 +23,7 @@ int  main()
      printf ("\n Mang vua sap xep: ");
      sapxep(a,n);
      xuatmang(a,n)
+    chen (a,n);
     return 0;
 }
 
@@ -110,4 +111,28 @@ int  sapxep(int a[50],int n)
         a[i]=a[j];
          a[j]=tam; 
    }
+}
+int  chen(int a[], int n)
+{
+    int x;
+    printf("\nNhap vi tri muon them:");
+    scanf("%d", &x);
+    int y;
+    printf("\nNhap phan tu muon them:");
+    scanf("%d", &y);
+    if(x<=0)
+    {
+        x=0;
+    }else if(x>=n)
+	 {
+        x=n;
+    }
+    for(int i=n; i>x ; i--)
+    {
+        a[i] = a[i-1];        
+    }
+    a[x]=y;
+    n++;
+    printf("\nMang sau khi them la:\n");
+    xuatmang(a,n);
 }
