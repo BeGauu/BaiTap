@@ -9,6 +9,7 @@ int sapxep (int a[50],int n);
 int songuyento (int p);
 int tinhtong (int a[50], int n);
 int vitri (int a[], int n);
+int chen(int a[],int n);
 int  main()
 
 {  int a[50], n,i ;
