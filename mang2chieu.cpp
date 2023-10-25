@@ -61,27 +61,6 @@ int min(int a[10][10], int m, int n)
 	}
 	return min;
 }
-/*bool isPrime(int a[][10], int m, int n) {
-
-  if (a[i][j] <= 1) {
-    return false;
-  }
-   for (int i = 2; i * i <= a[i][j]; i++) {
-        if (a[i][j] % i == 0) {
-      return false;
-    }
-  }
-  return true;
-}
-int songuyento(int a[10][10], int m, int n)
-{for (int i = 0; i < m; i++) {
-    for (int j = 0; j < n; j++) {
-      if (isPrime(a[i][j])) {
-        printf("%d ", a[i][j]);
-      }
-    }
-  }
-}*/
 int timkiem(int a[10][10], int m, int n){
 	int x;
 	int count=0;
@@ -98,13 +77,86 @@ int timkiem(int a[10][10], int m, int n){
  if (count==0){printf ("Khong tim thay x");
  }
 }
+void sapxep(int a[10][10], int m, int n){
+	int k = m*n;
+	for(int i=0; i<k-1; i++)
+	{
+		for(int j=i+1; j<k; j++)
+		{ if(a[i/n][i%n]>a[j/n][j%n])
+		       {
+				int temp  = a[i/n][i%n];
+				a[i/n][i%n] = a[j/n][j%n];
+				a[j/n][j%n] = temp;
+			   }  
+		}
+	}
+	
+}
+int tongduongcheo(int a[10][10], int m,int n) {
+  int tong = 0;
+  for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) {
+            if (i == j) {
+        tong += a[i][j];
+      }
+    }
+  } return tong;
+}
+
+int demsochan(int a[10][10], int m, int n) 
+{  
+  int dem = 0;
+  for (int i = n - 1; i >= 0; i--) {
+    for (int j = 0; j < i; j++) {
+      
+      if (a[i][j] % 2 == 0) {
+        dem++;
+      }
+    }
+  }
+ return dem;
+}
+bool kiemtra(int n)
+{ int i;
+ if (n<2)
+ return false;
+ for (i=2; i<=n/2;i++ )
+    if (n%i==0) return false;
+    return true;
+}
+int snt (int a[10][10], int m, int n)
+{  int c=0, tong=0;
+     for (int i=0; i<m; i++)
+     { for (int j=0; j<n; j++)
+         if (kiemtra(a[i][j])==true )
+         tong= tong +a[i][j];
+         c++;
+     }printf ("\n So nguyen to trong ma tran : %d \n Tong so nguyen to :%d",c,tong);
+
+}
+void sole (int a[10][10], int m, int n) 
+{
+  for (int i = m - 1; i >= 0; i--) 
+  {
+    for (int j = n - 1; j >= 0; j--) 
+	{
+      if (a[i][j] % 2 == 1) 
+	  {
+      	printf ("\n Cac so le nam trong ma tran:%d  ", a[i][j]);
+      }
+    }
+  }
+}
 int main()
 {
 	nhap(a, m, n);
 	xuat(a, m, n);
+	printf ("so chan nam trong tam giac tren cua duong cheo chinh %d \n",demsochan(a,m,n));
+	printf("Tong cac phan tu tren duong cheo chinh : %d\n", tongduongcheo(a, m,n));
+	snt(a,m,n);
+	sole(a,m,n);
 	printf("Gia tri lon nhat = %d", max(a, m, n));
 	printf("\nGia tri nho nhat = %d", min(a, m, n));
-	//songuyento(a,m,n);
 	timkiem(a, m, n);
 }
 
