@@ -1,0 +1,66 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+FILE * fb;
+  char ten[50],bl;
+  int nhaptep()
+   
+  { 
+  printf("Nhap ten tep: ");
+  gets(ten);
+    
+    if ((fb=fopen(ten,"w"))== NULL)
+    {
+    	printf ("sai doi\n");
+    	exit(1);
+	}while ((bl=getche() ) !='\r')
+	    putc (bl,fb);
+	    fclose (fb);
+	    return 0;
+  
+}
+int motep()
+{ 
+printf("Nhap ten tep: ");
+  gets(ten);
+  if ((fb=fopen(ten,"r"))==NULL)
+   { printf ("Deo co de mo \n");
+     exit(1);
+   }while ((bl=getc(fb))!=EOF)
+   printf ("%c",bl);
+   fclose(fb);
+   return 0;
+}
+int matran()
+{  
+  int a[3][3]={{1,2,3},{4,5,6},{7,8,9}};
+  int m=3;
+  FILE *fb;
+  char tentep[50];
+  printf("\n Nhap duong dan: ");
+  fflush(stdin);
+  gets(tentep);
+  fb=fopen(tentep,"wt");
+  if (fb==NULL)
+     { 
+       printf("\nLoi mo file");
+       exit(0);
+     }
+  else 
+  {
+  	fprintf(fb,"So dong, cot la %d\n",m);
+  	for (int i=0;i<m;i++)
+  	 { 
+  	    for (int j=0;j<m;j++)
+  	    { fprintf(fb,"%3d",a[i][j]); 
+  	    }fprintf (fb,"\n");
+  	 }
+  }fclose(fb);
+}
+
+int main ()
+{ nhaptep();
+  motep();
+  matran();
+  
+}
