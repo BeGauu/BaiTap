@@ -11,7 +11,7 @@
  	gets(path);
  	
  	   fp=fopen(path,"wt");
- 	   if(fp=NULL)
+ 	   if(fp==NULL)
  	   {
  	   	 printf("\nLoi mo file");
  	   	 exit(0);
