@@ -41,6 +41,7 @@ int timkiem  (int a[50], int n)
  	         printf ("\n %d xuat hien %d lan!",x,t);
          } 
 }
+
 int kiemtra(int n) {
     if (n < 2) {
         return 0; 
@@ -53,9 +54,10 @@ int kiemtra(int n) {
     return 1; 
 }
 void snt(int a[], int n) {
-    printf("Vi tri cac snt:\n");
+    printf("\n Vi tri cac snt:\n");
     for (int i = 0; i < n; i++) {
-        if (kiemtra(a[i])) {
+        if (kiemtra(a[i]) )
+		{
             printf("a[%d] ", i);
         }
     }
@@ -72,8 +74,6 @@ int  main()
      xuatmang(a,n);
       timkiem(a,n);
       snt(a,n);
-      system("pause");
       return 0;
 }
-
 
