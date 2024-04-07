@@ -82,7 +82,7 @@ int i,j;
 			if(a[j]<a[i])
 			hoanvi(a[i],a[j]);
 }
-void BubleSort(int a[],int n)
+void BubleSort(int a[],int n)// sx noi bot
 {
 	int i,j;
 	for(i=1;i<n;i++)
@@ -90,7 +90,7 @@ void BubleSort(int a[],int n)
 		if(a[j]<a[j-1])
 		hoanvi(a[j],a[j-1]);
 }
-void ShakeSort(int a[],int n)// sx noi bot
+void ShakeSort(int a[],int n)
 {
 	int i,j;
 	int left,right,k;
@@ -204,13 +204,13 @@ void Quicksort(int a[],int l,int r) // sx phan hoach
 
 }
 
-//sx trôn 
-int min(int a,int b)//Ğây là mot ham tro giup tra ve gia tri nho nhat cua hai so nguyên a va b.
+//sx trÃ´n 
+int min(int a,int b)//ÃÃ¢y lÃ  mot ham tro giup tra ve gia tri nho nhat cua hai so nguyÃªn a va b.
 {
 return a<b?a:b;
 }
-void Merge(int a[], int nb, int nc, int k)// <- Ham nay tron hai mang da sap xep b[] và c[] thanh mot mang da sap xep a[]. Các tham so là:
-{	int p, pb, pc, ib, ic, kb, kc;        //a[]: Mang can tron (mang da sap xep cuoi cùng).
+void Merge(int a[], int nb, int nc, int k)// <- Ham nay tron hai mang da sap xep b[] vÃ  c[] thanh mot mang da sap xep a[]. CÃ¡c tham so lÃ :
+{	int p, pb, pc, ib, ic, kb, kc;        //a[]: Mang can tron (mang da sap xep cuoi cÃ¹ng).
 p = pb = pc = 0; ib = ic = 0;             // nb: so phan tu trong mang b[]
 while((0 < nb)&&(0 < nc))                 // nc: so phan tu trong mang c[]
 {                                         // k: kich thuoc cua cac mang tam thoi b[], c[] trong qua trinh tron
@@ -240,7 +240,7 @@ nb -= kb; nc -= kc;
 }
 }
 
-void mergesort(int a[], int n)// sap xep hop nhat Ğây là hàm chính thuc hien sap xep tron. Nó nhan mot mang a[] và kich thuoc cua no n lam dau vao va sap xep mang theo thu tu không giam.
+void mergesort(int a[], int n)// sap xep hop nhat ÃÃ¢y lÃ  hÃ m chÃ­nh thuc hien sap xep tron. NÃ³ nhan mot mang a[] vÃ  kich thuoc cua no n lam dau vao va sap xep mang theo thu tu khÃ´ng giam.
 {
 	int	p, pb, pc;	//  chi so tren cac mang a, b, c
 	int	i, k = 1;	// Do dai cua day con khi phan hoach
