@@ -28,6 +28,21 @@ int timKiemTuyenTinh(int a[], int n, int x) {
     }
     return -1; // Tr? v? -1 n?u không t?m th?y
 }
+// Hàm t?m ki?m nh? phân (m?ng c?n ðý?c s?p x?p trý?c)
+int timKiemNhiPhan(int a[], int left, int right, int x) {
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+        if (a[mid] == x) {
+            return mid; // Tr? v? v? trí c?a ph?n t? n?u t?m th?y
+        }
+        if (a[mid] < x) {
+            left = mid + 1;
+        } else {
+            right = mid - 1;
+        }
+    }
+    return -1; // Tr? v? -1 n?u không t?m th?y
+}
 
 
 // Hàm ki?m tra s? nguyên t?
