@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 #include<string.h>
+#include<stdlib.h>
 typedef struct
 {
 char Ma[10];
@@ -66,7 +67,7 @@ int main()
 int c;
 for (;;)
 {
-clrscr();
+system("cls");
 printf("1. Nhap DSSV\n");
 printf("2. In DSSV\n");
 printf("3. Tim kiem\n");
