@@ -2,7 +2,7 @@
 #include<conio.h>
 int main()
 {
-FILE *f; clrscr();
+FILE *f; system("cls");
 f=fopen("D:\\CacSo.txt","wb");
 if (f!=NULL)
 {
