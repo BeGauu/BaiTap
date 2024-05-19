@@ -1,0 +1,191 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+// C?u trúc d? li?u sinh viên
+typedef struct {
+    char studentID[10];
+    char fullName[50];
+    int age;
+} Student;
+
+// Node cho danh sách liên k?t, hàng d?i, ngan x?p
+typedef struct Node {
+    Student student;
+    struct Node* next;
+} Node;
+
+// Khai báo các hàm
+Node* createNode(Student student);
+void insertNode(Node** head, Student student);
+void deleteNode(Node** head, char* studentID);
+void deleteList(Node** head);
+void displayList(Node* head);
+void enqueue(Node** front, Node** rear, Student student);
+Student dequeue(Node** front, Node** rear);
+void push(Node** top, Student student);
+Student pop(Node** top);
+int isEmpty(Node* head);
+// Ð?nh nghia các hàm
+
+// Tao nút
+Node* createNode(Student student) {
+    Node* newNode = (Node*)malloc(sizeof(Node));
+    if (newNode == NULL) {
+        printf("Memory allocation failed.\n");
+        exit(1);
+    }
+    newNode->student = student;
+    newNode->next = NULL;
+    return newNode;
+}
+// Thêm và xóa trong danh sách liên k?t
+
+void insertNode(Node** head, Student student) {
+    Node* newNode = createNode(student);
+    newNode->next = *head;
+    *head = newNode;
+}
+
+void deleteNode(Node** head, char* studentID) {
+    Node *temp = *head, *prev = NULL;
+
+    if (temp != NULL && strcmp(temp->student.studentID, studentID) == 0) {
+        *head = temp->next;
+        free(temp);
+        return;
+    }
+
+    while (temp != NULL && strcmp(temp->student.studentID, studentID) != 0) {
+        prev = temp;
+        temp = temp->next;
+    }
+
+    if (temp == NULL) {
+        printf("Student ID not found.\n");
+        return;
+    }
+
+    prev->next = temp->next;
+    free(temp);
+}
+
+void deleteList(Node** head) {
+    Node* current = *head;
+    Node* next;
+
+    while (current != NULL) {
+        next = current->next;
+        free(current);
+        current = next;
+    }
+
+    *head = NULL;
+}
+
+void displayList(Node* head) {
+    Node* temp = head;
+    while (temp != NULL) {
+        printf("Student ID: %s, Name: %s, Age: %d\n",
+               temp->student.studentID, temp->student.fullName, temp->student.age);
+        temp = temp->next;
+    }
+}
+// Hàng doi
+void enqueue(Node** front, Node** rear, Student student) {
+    Node* newNode = createNode(student);
+    if (*rear == NULL) {
+        *front = *rear = newNode;
+        return;
+    }
+    (*rear)->next = newNode;
+    *rear = newNode;
+}
+
+Student dequeue(Node** front, Node** rear) {
+    if (*front == NULL) {
+        printf("Queue is empty.\n");
+        exit(1);
+    }
+    Node* temp = *front;
+    Student student = temp->student;
+    *front = (*front)->next;
+
+    if (*front == NULL)
+        *rear = NULL;
+
+    free(temp);
+    return student;
+}
+
+//Ngan xep
+void push(Node** top, Student student) {
+    Node* newNode = createNode(student);
+    newNode->next = *top;
+    *top = newNode;
+}
+
+Student pop(Node** top) {
+    if (*top == NULL) {
+        printf("Stack is empty.\n");
+        exit(1);
+    }
+    Node* temp = *top;
+    Student student = temp->student;
+    *top = (*top)->next;
+    free(temp);
+    return student;
+}
+
+int isEmpty(Node* head) {
+    return head == NULL;
+}
+
+int main() {
+    Node* list = NULL;
+    Node* queueFront = NULL;
+    Node* queueRear = NULL;
+    Node* stack = NULL;
+
+    Student student1 = {"SV001", "Nguyen Van A", 20};
+    Student student2 = {"SV002", "Tran Thi B", 22};
+    Student student3 = {"SV003", "Le Van C", 21};
+
+    // Thêm sinh viên vào danh sách liên k?t
+    insertNode(&list, student1);
+    insertNode(&list, student2);
+    insertNode(&list, student3);
+
+    // Hi?n th? danh sách liên k?t
+    printf("Linked List:\n");
+    displayList(list);
+
+    // Thêm sinh viên vào hàng d?i
+    enqueue(&queueFront, &queueRear, student1);
+    enqueue(&queueFront, &queueRear, student2);
+    enqueue(&queueFront, &queueRear, student3);
+
+    // L?y sinh viên t? hàng d?i
+    printf("Queue:\n");
+    while (!isEmpty(queueFront)) {
+        Student s = dequeue(&queueFront, &queueRear);
+        printf("Dequeued: %s, %s, %d\n", s.studentID, s.fullName, s.age);
+    }
+
+    // Thêm sinh viên vào ngan x?p
+    push(&stack, student1);
+    push(&stack, student2);
+    push(&stack, student3);
+
+    // L?y sinh viên t? ngan x?p
+    printf("Stack:\n");
+    while (!isEmpty(stack)) {
+        Student s = pop(&stack);
+        printf("Popped: %s, %s, %d\n", s.studentID, s.fullName, s.age);
+    }
+
+    // H?y danh sách liên k?t
+    deleteList(&list);
+
+    return 0;
+}
