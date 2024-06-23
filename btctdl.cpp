@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-// Ð?nh nghia c?u trúc tam giác
+// Dinh nghia cau truc tam giac
 typedef struct {
     double sides[3];
     double perimeter;
