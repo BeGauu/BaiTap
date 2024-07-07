@@ -37,7 +37,7 @@ void push(stack *s, hinhtru x) {
 hinhtru pop(stack *s) {
     if (empty(s)) {
         hinhtru ht;
-        ht.stt = -1; // Gi· tr? m?c d?nh khi stack r?ng
+        ht.stt = -1; // Gi√° tr? m?c d?nh khi stack r?ng
         return ht;
     }
     
