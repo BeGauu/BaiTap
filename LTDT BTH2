@@ -1,0 +1,158 @@
+//Bai 2. Viet chuong trinh nhap xuat mang 2 chieu(ma tran vuong) va thuc hien cac yeu cau:
+#include<stdio.h>
+#include<conio.h>
+
+int nhapMT(int a[100][100], int n){
+	for(int i=1; i<=n;i++){
+		for(int j=1; j<=n;j++){
+			printf("\na[%d][%d]=",i,j);
+			scanf("%d",&a[i][j]);
+		}
+	}
+}
+
+int xuatMT(int a[100][100], int n){
+	printf("\nMang sau khi nhap: \n");
+	for(int i=1; i<=n;i++){
+		for(int j=1; j<=n;j++){
+			printf("%d \t",a[i][j]);
+		}
+		printf("\n");
+	}
+}
+//1.Nhap x tu ban phim va in ra man hinh phan tu lon nhat tren hang thu x.
+void pt_max_dong_x(int a[100][100], int n, int x){
+	printf("\nNhap dong x= "); scanf("%d",&x);
+	int max=a[x][1];
+	for(int j=1; j<=n; j++){
+		if(a[x][j]>max)
+			max=a[x][j];
+	}
+	printf("\nPhan tu lon nhat tren dong %d la: %d",x,max);
+}
+//2. Nhap y tu ban phim va in ra man hinh phan tu nho nhat tren cot thu y
+void pt_min_cot_y(int a[100][100], int n, int y){
+	printf("\nNhap cot y= "); scanf("%d",&y);
+	int min=a[1][y];
+	for(int i=1; i<=n; i++){
+		if(a[i][y]<min)
+			min=a[i][y];
+	}
+	printf("\nPhan tu nho nhat tren dong %d la: %d",y,min);
+}
+//3. Nhap k tu ban phim va in ra man hinh tong cac phan tu tren hang k
+void Tong_pt_hang_k(int a[100][100], int n, int k){
+	int tong=0;
+	printf("\nNhap hang k= "); scanf("%d",&k);
+	for(int j=1; j<=n; j++){
+		tong=tong+a[k][j];
+	}
+	printf("\nTong cac phan tu tren hang k= %d ", tong);
+		
+}
+
+//4. Nhap m tu ban phim va in ra man hinh tong cac phan tu tren cot m
+void Tong_pt_cot_m(int a[100][100], int n, int m){
+	int tong=0;
+	printf("\nNhap cot m= "); scanf("%d",&m);
+	for(int i=1; i<=n; i++){
+		tong=tong+a[i][m];
+	}
+	printf("\nTong cac phan tu tren cot m= %d ", tong);
+		
+}
+//5. In ra man hinh tong cac phan tu co gia tri chan tren ma tran
+int Tong_pt_chan_MT(int a[100][100], int n){
+	int tong=0;
+	for(int i=1; i<=n;i++){
+		for(int j=1; j<=n;j++){
+			if(a[i][j]%2==0){
+			tong=tong+a[i][j];
+			}
+		}
+	}
+	printf("\nTong cac phan tu co gia tri chan tren ma tran: %d",tong);
+}
+//6. Kiem tra toan bo cac phan tu tren duong cheo co bang 0 hay khong? Neu co in ra:“Duong cheo bang 0”, nguoc lai in ra: “Duong cheo khac 0” 
+int kt_dcheo(int a[100][100], int n){
+	for(int i=1; i<=n;i++){
+		if(a[i][i]!=0){
+		return 0;
+		}
+		return 1;
+	}
+}
+//7. Kiem tra TOAN BO CAC PHAN TU tren ma tran co nho hon hay bang 1 hay khong? Neu co in ra YES, nguoc lai in NO
+int kt_nhohon1(int a[100][100], int n){
+	int dem=0;
+	for(int i=1; i<=n;i++){
+		for(int j=1; j<=n;j++){
+			if(a[i][j]<=1){
+				dem++;
+			}
+		}
+	}
+	if(dem==0){
+		printf("\n=>NO");
+	}
+	else printf("\n=>YES");
+}
+//8.Kiem tra xem mang 2 chieu co doi xung qua duong cheo chinh hay khong? Neu co in DOI XUNG, nguoc lai in KHONG DOI XUNG.
+int kt_dxung(int a[100][100], int n){
+	for(int i=1; i<=n;i++){
+		for(int j=1; j<=n;j++){
+			if(a[i][j]!=a[j][i]){
+				return 0;
+			}
+		}
+	}
+				return 1;
+	
+}
+//Ham MAIN
+int main(){
+	int a[100][100],n,x,y,k,m;
+	printf("Nhap n="); scanf("%d",&n);
+	nhapMT(a,n);
+	xuatMT(a,n);
+	
+	printf("\n\n");
+	printf("1.Nhap x tu ban phim va in ra man hinh phan tu lon nhat tren hang thu x.");
+	pt_max_dong_x(a,n,x);
+
+	printf("\n\n");
+	printf("2. Nhap y tu ban phim va in ra man hinh phan tu nho nhat tren cot thu y");
+	pt_min_cot_y(a,n,y);
+
+	printf("\n\n");
+	printf("3. Nhap k tu ban phim va in ra man hinh tong cac phan tu tren hang k");
+	Tong_pt_hang_k(a,n,k);
+
+	printf("\n\n");
+	printf("4. Nhap m tu ban phim va in ra man hinh tong cac phan tu tren cot m");
+	Tong_pt_cot_m(a,n,m);
+
+	printf("\n\n");
+	printf("5. In ra man hinh tong cac phan tu co gia tri chan tren ma tran");
+	Tong_pt_chan_MT(a,n);
+
+	printf("\n\n");
+	printf("6. Kiem tra toan bo cac phan tu tren duong cheo co bang 0 hay khong? Neu co in ra:“Duong cheo bang 0”, nguoc lai in ra: “Duong cheo khac 0” ");
+	if(kt_dcheo(a,n)==1){
+		printf("\nDuong cheo bang 0");
+	}
+	else if(kt_dcheo(a,n)==0)
+		printf("\nDuong cheo khac 0");
+	
+	printf("\n\n");
+	printf("\n7. Kiem tra TOAN BO CAC PHAN TU tren ma tran co nho hon hay bang 1 hay khong? Neu co in ra YES, nguoc lai in NO");
+	kt_nhohon1(a,n);
+
+	printf("\n\n");
+	printf("8.Kiem tra xem mang 2 chieu co doi xung qua duong cheo chinh hay khong? Neu co in DOI XUNG, nguoc lai in KHONG DOI XUNG.");
+	if(kt_dxung(a,n)==1){
+		printf("\nDOI XUNG");
+	}
+	else if(kt_dxung(a,n)==0)
+		printf("\nKHONG DOI XUNG");
+} 
