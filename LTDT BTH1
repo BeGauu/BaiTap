@@ -1,0 +1,124 @@
+#include<stdio.h>
+#include<conio.h>
+
+void nhap(int a[50], int n){
+	for(int i=1; i<=n; i++){
+		printf("Nhap phan tu thu a[%d]: ",i);
+		scanf("%d",&a[i]);
+	}
+}
+
+void xuat(int a[50], int n){
+	for(int i=1; i<=n; i++){
+		printf("%d\t",a[i]);
+	}
+}
+
+/*int timX(int a[50], int n,int x){
+	printf("\nNhap phan tu can tim x= ");
+	scanf("%d",&x);
+	for(int i=1; i<=n; i++){
+		do{
+		if(a[i]==x){
+			printf("\na[%d]=%d",i,x);
+			i++;
+		}
+		else i++;	
+	}while(i<=n);
+	}	
+}*/
+//1.Nhap x tu ban phim va in ra man hinh phan tu thu i trong mang
+int xuatGiaTri(int a[50], int n, int x){
+	printf("\nNhap vi tri can xuat gia tri: ");
+	scanf("%d",&x);
+	for(int i=1; i<=n; i++){
+		if(i==x){
+			printf("a[%d]=%d",i,a[i]);
+		}
+	}
+	
+}
+
+//2. In ra man hinh vi tri va gia tri cua phan tu lon nhat trong mang
+int timMax(int a[50], int n){
+	int max=a[1];
+	int t=1; 
+	int viTriMax[50];
+	for(int i=2; i<=n; i++){
+		if(max<a[i]){
+			max=a[i];
+		}
+	}
+	for(int j=1; j<=n; j++){
+		if(a[j]==max){
+			viTriMax[t]=j;
+			t++;
+		}
+	}	
+	printf("\nMax=%d ",max);
+	printf("\nCac vi tri cua gia tri lon nhat la:\n");
+	for(int i=1; i<t; i++){
+		printf("%d\t", viTriMax[i]);
+}
+}
+//3. In ra man hinh vi tri va gia tri cua phan tu nho nhat trong mang
+int timMin(int a[50], int n){
+	int min=a[1];
+	int t=1; 
+	int viTriMin[50];
+	for(int i=2; i<=n; i++){
+		if(min>a[i]){
+			min=a[i];
+		}
+	}
+	for(int j=1; j<=n; j++){
+		if(a[j]==min){
+			viTriMin[t]=j;
+			t++;
+		}
+	}	
+	printf("\nMax=%d ",min);
+	printf("\nCac vi tri cua gia tri lon nhat la:\n");
+	for(int i=1; i<t; i++){
+		printf("%d\t", viTriMin[i]);
+}
+}
+
+//4. In ra man hinh cac so le trong mang
+void inSoLe(int a[], int n) {
+    printf("\nCac so le trong mang: ");
+    for (int i = 0; i < n; i++) {
+        if (a[i] % 2 != 0) {
+            printf("%d ", a[i]);
+        }
+    }
+    printf("\n");
+}
+//5.In ra man hinh tong gia tri cua cac phan tu trong mang
+void tinhTong(int a[], int n) {
+    int tong = 0;
+    for (int i = 0; i < n; i++) {
+        tong += a[i];
+    }
+    printf("Tong cac phan tu trong mang: %d\n", tong);
+}
+
+
+int main()
+{
+	int n,x, a[50];
+	printf("Nhap so luong phan tu cua mang: ");
+	scanf("%d",&n);
+	nhap(a,n);
+	printf("\nMang sau khi nhap:\n ");
+	xuat(a,n);
+	//timX(a,n,x);
+	xuatGiaTri(a,n,x);
+	timMax(a,n);
+	timMin(a,n);
+	printf("\n\n");
+	inSoLe(a,n);
+	printf("\n\n");
+	tinhTong(a,n);	
+	
+ } 
