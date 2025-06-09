@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOA TAI NGỌC TRAI B353.19</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="trangchu.html"><img src="images/llogo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="menu">
+                <li><a  href="trangchu.html">Trang Chủ</a></li>
+                <li><a class="danhdau" href="sanpham.html">Sản Phẩm </a></li>
+                <li><a href="blog.html">Tin Tức</a></li>
+                <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                <li><a href="lienhe.html">Liên Hệ</a></li>
+                <li id="lg-bag"><a href="crat.html"><i class="fas fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="crat.html"><i class="fas fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-bars"></i>
+            
+        </div>
+    </section>
+
+<section id="prodetails" class="section-p1">
+    <div class="single-pro-image">    
+        <img src="/images/B353.jpg" width="100%" id="mainimg" alt="">
+    <div class="small-img-group">
+         <div class="small-img-col">
+            <img src="/images/B353.jpg" width="100%" class="small-img" alt="">
+         </div>
+
+         <div class="small-img-col">
+            <img src="/images/hoataib353.jpg" width="100%" class="small-img" alt="">
+         </div>
+
+         <div class="small-img-col">
+            <img src="/images/hoataib353(5).png"  width="100%" class="small-img" alt="">
+         </div>
+
+         <div class="small-img-col">
+            <img src="/images/hoataib353(6).webp" width="100%" class="small-img" alt="">
+         </div>
+    </div>
+    </div>
+    
+    <div class="single-pro-details">
+        <h6>Trang chủ / Sản phẩm </h6>
+        <h4> HOA TAI NGỌC TRAI B353.19</h4>
+        <h2>20,000,000 ₫</h2>
+        <select>
+            <option>Chọn kiểu dáng</option>
+            <option>Kiểu 1</option>
+            <option>Kiểu 2</option>
+            <option>Kiểu 3</option>
+            <option>Kiểu 4</option>
+        </select>
+        <input type="number" value="1">
+        <button class="normal">THÊM VÀO GIỎ HÀNG</button>
+        <h4>Chi tiết sản phẩm</h4>
+        <span>Được chế tác từ Vàng trắng 18K cao cấp, 
+            mỗi chiếc bông tai là một tác phẩm nghệ thuật tinh xảo với hàng kim cương tự nhiên lấp lánh được nạm tỉ mỉ 
+            trên phần khoen ôm sát thùy tai. Điểm nhấn hoàn hảo chính là hai viên ngọc trai Akoya Nhật Bản tròn đều, 
+            có độ bóng và ánh xà cừ tuyệt mỹ, với kích thước lớn và bề mặt gần như không tì vết, 
+            biểu trưng cho vẻ đẹp tinh khiết và quý phái vượt thời gian. 
+            Đây không chỉ là một món trang sức mà còn là một khoản đầu tư giá trị, 
+            mang đến vẻ đẹp thanh lịch, đẳng cấp và tôn vinh phong cách của người sở hữu trong mọi khoảnh khắc.</span>
+    </div>
+</section>
+
+<div class="tabs">
+  <div class="tab-buttons">
+    <button class="tab-btn active" onclick="showTab('info')">Thông tin bổ sung</button>
+<button class="tab-btn" onclick="showTab('review', this)">Đánh giá (<span id="review-count">0</span>)</button>
+  </div>
+
+  <div class="tab-content" id="info">
+    <table class="info-table">
+      <tr>
+        <td>Mã Số</td>
+        <td>B353.19</td>
+      </tr>
+      <tr>
+        <td>Trọng Lượng</td>
+        <td>3 – 5gram</td>
+      </tr>
+      <tr>
+        <td>Trọng Lượng Tham Khảo</td>
+        <td>3.41gram</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="tab-content" id="review" style="display:none;">
+    <h3>Đánh giá của bạn</h3>
+    <p>Email của bạn sẽ không được hiển thị công khai. Các trường bắt buộc được đánh dấu *</p>
+<div id="reviews-display"></div>
+   <form class="review-form" id="review-form" autocomplete="off">
+  <div class="stars" id="starRating">
+    <label for="rating">Your Rating *</label>
+    <span data-value="1">&#9733;</span>
+    <span data-value="2">&#9733;</span>
+    <span data-value="3">&#9733;</span>
+    <span data-value="4">&#9733;</span>
+    <span data-value="5">&#9733;</span>
+  </div>
+
+  <label  for="review">Your Review *</label>
+  <textarea id="review-text" name="review" rows="5" required></textarea>
+
+  <label for="name">Họ Và Tên *</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email *</label>
+  <input type="email" id="email" name="email" required>
+
+  <div class="save-info">
+    <input type="checkbox" id="save-info">
+    <label for="save-info">Lưu thông tin cho lần bình luận tiếp theo</label>
+  </div>
+
+  <button type="submit" >Submit</button>
+</form>
+    
+        
+    </div>
+  </div>
+</div>
+
+
+
+<section id="product1" class="section-p1">
+    <h2>Có Thể Bạn Quan Tâm</h2>
+    <div class="container">
+        
+        <div class="pro">
+            <img src="images/LNTW7.jpg" alt="">
+            <div class="des">
+                <span>Lắc tay, Trang sức vàng</span>
+                <h5>LẮC TAY VÀNG TRẮNG LNTW7.3.136</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>20,000,000 ₫</h4>
+            </div>
+            <a href="#"><i class="fas fa-shopping-cart crat"></i></a>
+        </div>
+        <div class="pro">
+            <img src="images/NCNTW5.1.224-576x576.jpg" alt="">
+            <div class="des">
+                <span>Nhẫn cưới kim cương, Trang sức cưới </span>
+                <h5>NHẪN CƯỚI KIM CƯƠNG NCNTW5.1.224</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>24,500,000 ₫</h4>
+            </div>
+            <a href="#"><i class="fas fa-shopping-cart crat"></i></a>
+        </div>
+        <div class="pro">
+            <img src="images/Four-Leaf-Clover-Rings-1-325x325.jpg" alt="">
+            <div class="des">
+                <span>Nhẫn, Trang Sức Kim Cương </span>
+                <h5>FOUR-LEAF CLOVER RINGS</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>25,000,000 ₫</h4>
+            </div>
+            <a href="#"><i class="fas fa-shopping-cart crat"></i></a>
+        </div>
+        
+        <div class="pro">
+            <img src="images/NNTW7.3.1164-576x576.jpg" alt="">
+            <div class="des">
+                <span>Nhẫn nữ, Trang sức vàng </span>
+                <h5>NHẪN NỮ VÀNG TRẮNG NNTW7.3.1164</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>2,000,000 ₫</h4>
+            </div>
+            <a href="#"><i class="fas fa-shopping-cart crat"></i></a>
+        </div>
+
+</section>
+
+<section id="new" class="section-p1 section-m1">
+    <div class="newtext">
+        <h4>Đăng ký ngay</h4>
+        <p>Để nhận được các tin tức thời trang mới nhất cùng với <span>ưu đãi và khuyến mãi.</span></p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="Email của bạn">
+        <button class="normal">ĐĂNG KÝ</button>
+    </div>
+</section>
+
+<footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="/images/llogo.png" alt="">
+        <h4>Liên Hệ</h4>
+        <p><strong>Địa chỉ:</strong> 126 Nguyễn Thiện Thành, Phường 5, Trà Vinh, Việt Nam</p>
+        <p>Gọi ngay <strong>(+84) 332767567</strong></p>
+        <p><strong>Email:</strong> ngocsummer0309@gmail.com</p>
+        <div class="follow">
+            <h4>Theo dõi qua</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <h4>Liên kết</h4>
+        <a href="#">Về chúng tôi</a></li>
+        <a href="#">Tuyển dụng</a></li>
+        <a href="#">Chính sách đổi trả</a>
+        <a href="#">Chính sách bảo hành</a>
+        <a href="#">Chính sách vận chuyển</a>
+    </div>
+
+    <div class="col">
+        <h4>Tài khoản</h4>
+        <a href="#">Đăng nhập</a></li>
+        <a href="#">Giỏ hàng</a></li>
+        <a href="#">Danh sách yêu thích</a>
+        <a href="#">Theo dõi đơn hàng</a>
+        <a href="#">Trợ giúp</a>
+    </div>
+    <div class="col install">
+        <h4>Cài đặt ứng dụng</h4>
+        <p>Qua App Store hoặc Google Play</p>
+        <div class="row">  
+            <img src="/images/app.jpg" alt="">
+            <img src="/images/play.jpg" alt="">
+        </div>
+        <p>Thanh toán qua</p>
+        <img src="/images/pay.png" alt="">
+    </div>
+    <div class="copyright">
+            © Thiết kế và lập trình bởi Nhóm BaCon Gà
+    </div> 
+
+</footer>
+
+<script>
+    var mainimg = document.getElementById("mainimg");
+    var smallimg = document.getElementsByClassName("small-img");
+
+    smallimg[0].onclick = function(){
+        mainimg.src = smallimg[0].src;
+    }
+    smallimg[1].onclick = function(){
+        mainimg.src = smallimg[1].src;
+    }
+    smallimg[2].onclick = function(){
+        mainimg.src = smallimg[2].src;
+    }
+    smallimg[3].onclick = function(){
+        mainimg.src = smallimg[3].src;
+    }
+
+
+</script>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
