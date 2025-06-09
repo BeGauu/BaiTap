@@ -548,7 +548,7 @@ footer .copyright{
 #page-header{
   background-image: url(../images/bannershop1.jpg);
   background-size: cover;
-    background-position: top 60% ;
+  background-position: top 60% ;
   width: 100%;
   height: 40vh;
   display: flex;
@@ -639,23 +639,188 @@ footer .copyright{
   font-weight: 500;
 }
 
+.tabs {
+  background: #fff;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 5px;
+}
 
+.tab-buttons {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
 
+.tab-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
 
+.tab-btn.active {
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
+.info-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-weight: 500;
 
+}
+#review p{
+  color: #222;
+  font-weight: 500;
+}
+.stars span {
+  font-size: 25px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+}
 
+.stars span.hovered,
+.stars span.selected {
+  color: gold;
+}
 
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 600px;
+}
 
+.review-form input[type="text"],
+.review-form input[type="email"],
+.review-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
 
+.review-form button {
+  width: 150px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 
+.save-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
 
+.review-card {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+  .review-card .stars {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .review-card em {
+    font-size: 13px;
+    color: #555;
+  }
+.review-card strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: #222;
+}
 
+/* Blog Page */
+#page-header.blog-header{
+  background-image: url(../images/b19.jpg);
 
+}
 
+#blog{
+  padding: 150px 150px 0 150px;
+}
 
+#blog p{
+  color: #696969;
+}
 
+#blog .blog-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding-bottom: 90px;
+}
 
+#blog .blog-img {
+  width: 50%;
+  margin-right: 40px;
+}
+
+#blog img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#blog .blog-details {
+  width: 50%;
+}
+
+#blog .blog-details a{
+  text-decoration: none;
+  color: #00B2EE;
+  font-weight: 700;
+  font-size: 15px;
+  position: relative;
+}
+
+#blog .blog-details a::after{
+  content: "";
+  width: 50px;
+  height: 3px;
+  background: #00B2EE;
+  position: absolute;
+  top: 4px;
+  right: -60px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+#blog .blog-details a:hover{
+  color: #1874CD;
+}
+
+#blog .blog-details a:hover::after{
+  background-color: #1874CD;
+}
+
+#blog .blog-box h1 {
+  position: absolute;
+  top: -43px;
+  left: 0;
+  font-size: 70px;
+  font-weight: 700;
+  color: #ccc;
+  z-index: -9;
+}
 
 
 /* Responsive Styles */
@@ -790,6 +955,28 @@ footer .copyright{
   width: 70%;
 }
 
+.tab-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tab-btn {
+    width: 100%;
+    text-align: left;
+    padding: 12px 10px;
+    font-size: 16px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  
+
 
 }
 
@@ -892,6 +1079,66 @@ footer .copyright{
 #prodetails .single-pro-details {
     width: 100%;
 }
+
+.tabs {
+    padding: 15px;
+  }
+
+  .tab-btn {
+    font-size: 15px;
+    padding: 10px 8px;
+  }
+
+  .info-table td {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .info-table tr {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .stars {
+    font-size: 20px;
+  }
+
+  .review-form label {
+    font-size: 14px;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .remember {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /*blog page*/
+  #blog {
+    padding: 100px 20px 0 20px;
+  }
+
+  #blog .blog-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #blog .blog-img {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  #blog .blog-details {
+    width: 100%;
+  }
+
 
 
 }
