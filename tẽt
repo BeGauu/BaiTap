@@ -1,0 +1,294 @@
+Vì câu trả lời đã được bao gồm trong phản hồi trước, tôi sẽ trình bày lại các câu trả lời đúng một cách rõ ràng để bạn tiện theo dõi:
+Kiểm tra kiến thức của bạn - Các thành phần mạng (Network Components)
+ * Câu hỏi: Cái tên nào sau đây dùng để chỉ tất cả các máy tính được kết nối với mạng và tham gia trực tiếp vào giao tiếp mạng?
+   * Máy chủ (hosts)
+ * Câu hỏi: Khi dữ liệu được mã hóa dưới dạng các xung ánh sáng, phương tiện nào đang được sử dụng để truyền dữ liệu?
+   * Cáp quang (Fiber-optic cable)
+ * Câu hỏi: Hai thiết bị nào là thiết bị trung gian? (Chọn hai)
+   * Bộ định tuyến (routers)
+   * Bộ chuyển mạch (switches)
+Kiểm tra kiến thức của bạn - Các biểu diễn và cấu trúc liên kết mạng (Network Representations and Topologies)
+ * Câu hỏi: Kết nối nào kết nối vật lý thiết bị đầu cuối với mạng?
+   * NIC (Network Interface Card)
+ * Câu hỏi: Kết nối nào là các cổng chuyên dụng trên một thiết bị mạng kết nối với các mạng riêng lẻ?
+   * Giao diện (Interface)
+ * Câu hỏi: Loại cấu trúc liên kết mạng nào cho phép bạn xem các thiết bị đầu cuối nào được kết nối với các thiết bị trung gian nào và loại phương tiện nào đang được sử dụng?
+   * Cấu trúc liên kết logic (Logical topology)
+ * Câu hỏi: Loại cấu trúc liên kết mạng nào cho phép bạn xem vị trí thực tế của các thiết bị trung gian và việc lắp đặt cáp?
+   * Cấu trúc liên kết vật lý (Physical topology)
+Kiểm tra kiến thức của bạn - Các loại mạng phổ biến (Common Types of Networks)
+ * Câu hỏi: Cơ sở hạ tầng mạng nào cung cấp quyền truy cập cho người dùng và thiết bị đầu cuối trong một khu vực địa lý nhỏ, thường là mạng trong một bộ phận của doanh nghiệp, một gia đình hoặc doanh nghiệp nhỏ?
+   * LAN (Local Area Network)
+ * Câu hỏi: Cơ sở hạ tầng mạng nào mà một tổ chức có thể sử dụng để cung cấp quyền truy cập an toàn cho các cá nhân làm việc cho một tổ chức khác nhưng yêu cầu quyền truy cập vào dữ liệu của tổ chức?
+   * Extranet
+ * Câu hỏi: Cơ sở hạ tầng mạng nào cung cấp quyền truy cập vào các mạng khác trên một khu vực địa lý rộng lớn, thường thuộc sở hữu và quản lý của nhà cung cấp dịch vụ viễn thông?
+   * WAN (Wide Area Network)
+Kiểm tra kiến thức của bạn - Các mạng đáng tin cậy (Reliable Networks)
+ * Câu hỏi: Khi các nhà thiết kế tuân theo các tiêu chuẩn và giao thức được chấp nhận, đặc điểm cơ bản nào trong bốn đặc điểm cơ bản của kiến trúc mạng được đạt được?
+   * Bảo mật (Security)
+ * Câu hỏi: Tính bảo mật (Confidentiality), tính toàn vẹn (integrity) và tính sẵn sàng (availability) là các yêu cầu của đặc điểm cơ bản nào trong bốn đặc điểm cơ bản của kiến trúc mạng?
+   * Bảo mật (Security)
+ * Câu hỏi: Với loại chính sách nào, bộ định tuyến có thể quản lý luồng dữ liệu và lưu lượng thoại, ưu tiên các giao tiếp thoại nếu mạng bị tắc nghẽn?
+   * QoS (Quality of Service)
+ * Câu hỏi: Có nhiều đường dẫn đến một đích được gọi là dự phòng (redundancy). Đây là một ví dụ về đặc điểm nào của kiến trúc mạng?
+   * Khả năng chịu lỗi (fault tolerance)
+Kiểm tra kiến thức của bạn - Các xu hướng mạng (Network Trends)
+ * Câu hỏi: Tính năng nào là một công cụ hội nghị tốt để sử dụng với những người khác ở các thành phố khác, hoặc thậm chí ở một quốc gia khác?
+   * Giao tiếp video (Video communications)
+ * Câu hỏi: Tính năng nào mô tả việc sử dụng các công cụ cá nhân để truy cập thông tin và giao tiếp trên mạng doanh nghiệp hoặc mạng trường học?
+   * BYOD (Bring Your Own Device)
+ * Câu hỏi: Tính năng nào bao gồm các tùy chọn như Công khai (Public), Riêng tư (Private), Tùy chỉnh (Custom) và Kết hợp (Hybrid)?
+   * Điện toán đám mây (Cloud computing)
+ * Câu hỏi: Tính năng nào đang được sử dụng khi kết nối một thiết bị với mạng bằng ổ cắm điện?
+   * Đường dây điện (Powerline)
+ * Câu hỏi: Tính năng nào sử dụng cùng công nghệ di động với điện thoại thông minh?
+   * Băng thông rộng không dây (Wireless broadband)
+Kiểm tra kiến thức của bạn - Các quy tắc (The Rules)
+ * Câu hỏi: Quá trình chuyển đổi thông tin thành dạng phù hợp để truyền là gì?
+   * Mã hóa (Encoding)
+ * Câu hỏi: Bước nào trong quá trình giao tiếp liên quan đến việc xác định đúng địa chỉ của người gửi và người nhận?
+   * Đóng gói (Encapsulation)
+ * Câu hỏi: Ba thành phần nào của thời gian nhắn tin? (Chọn ba.)
+   * Kiểm soát luồng (Flow control)
+   * Số thứ tự (Sequence numbers)
+   * Thời gian chờ phản hồi (Response timeout)
+ * Câu hỏi: Phương thức gửi nào được sử dụng để truyền thông tin đến một hoặc nhiều thiết bị đầu cuối, nhưng không phải tất cả các thiết bị trên mạng?
+   * Multicast
+Kiểm tra kiến thức của bạn - Giao thức (Protocols)
+ * Câu hỏi: BGP và OSPF là các ví dụ về loại giao thức nào?
+   * Định tuyến (routing)
+ * Câu hỏi: Hai giao thức nào là giao thức phát hiện dịch vụ? (Chọn hai.)
+   * DNS (Domain Name System)
+   * DHCP (Dynamic Host Configuration Protocol)
+ * Câu hỏi: Mục đích của chức năng sắp xếp thứ tự trong giao tiếp mạng là gì?
+   * Để dán nhãn duy nhất các phân đoạn dữ liệu được truyền để lắp ráp lại đúng cách bởi người nhận.
+ * Câu hỏi: Giao thức này chịu trách nhiệm đảm bảo việc gửi thông tin đáng tin cậy.
+   * TCP (Transmission Control Protocol)
+Kiểm tra kiến thức của bạn - Bộ giao thức (Protocol Suites)
+ * Câu hỏi: UDP và TCP thuộc lớp nào của giao thức TCP/IP?
+   * Truyền tải (transport)
+ * Câu hỏi: Hai giao thức nào thuộc lớp ứng dụng của mô hình TCP/IP?
+   * DNS (Domain Name System)
+   * DHCP (Dynamic Host Configuration Protocol)
+ * Câu hỏi: Giao thức nào hoạt động ở lớp truy cập mạng của mô hình TCP/IP?
+   * Ethernet
+ * Câu hỏi: Những giao thức nào sau đây cung cấp phản hồi từ máy chủ đích đến máy chủ nguồn về các lỗi trong việc gửi gói tin? (Chọn hai.)
+   * ICMPv4 (Internet Control Message Protocol version 4)
+   * ICMPv6 (Internet Control Message Protocol version 6)
+ * Câu hỏi: Một thiết bị nhận một khung liên kết dữ liệu với dữ liệu và xử lý, sau đó loại bỏ thông tin Ethernet. Thông tin nào sẽ được xử lý tiếp theo bởi thiết bị nhận?
+   * IP ở lớp internet
+ * Câu hỏi: Các dịch vụ nào được cung cấp bởi lớp internet của bộ giao thức TCP/IP? (Chọn ba.)
+   * Phân giải địa chỉ (Address Resolution)
+   * Giao thức định tuyến (Routing Protocols)
+   * Giao thức Internet (Internet Protocol)
+Kiểm tra kiến thức của bạn - Các tổ chức tiêu chuẩn (Standards Organizations)
+ * Câu hỏi: Đúng hay sai. Các tổ chức tiêu chuẩn thường là trung lập về nhà cung cấp.
+   * Đúng (True)
+ * Câu hỏi: Tổ chức tiêu chuẩn này liên quan đến các tài liệu Yêu cầu bình luận (RFC) quy định các giao thức mới và cập nhật các giao thức hiện có.
+   * Lực lượng đặc nhiệm kỹ thuật Internet (Internet Engineering Task Force - IETF)
+ * Câu hỏi: Tổ chức tiêu chuẩn này chịu trách nhiệm phân bổ địa chỉ IP và quản lý tên miền.
+   * Cơ quan cấp số hiệu Internet (Internet Assigned Numbers Authority - IANA)
+ * Câu hỏi: Các loại tiêu chuẩn nào được phát triển bởi Liên minh công nghiệp điện tử (EIA)?
+   * Dây điện và đầu nối (electric wiring and connectors)
+Kiểm tra kiến thức của bạn - Đóng gói dữ liệu (Data Encapsulation)
+ * Câu hỏi: Quá trình chia một luồng dữ liệu lớn thành các mảnh nhỏ hơn trước khi truyền là gì?
+   * Phân đoạn (segmentation)
+ * Câu hỏi: PDU liên quan đến lớp truyền tải là gì?
+   * Phân đoạn (segment)
+ * Câu hỏi: Lớp ngăn xếp giao thức nào đóng gói dữ liệu thành các khung?
+   * Liên kết dữ liệu (data link)
+ * Câu hỏi: Tên của quá trình thêm thông tin giao thức vào dữ liệu khi nó di chuyển xuống ngăn xếp giao thức là gì?
+   * Đóng gói (encapsulation)
+Kiểm tra kiến thức của bạn - Truy cập dữ liệu (Data Access)
+ * Câu hỏi: Đúng hay sai? Các khung được trao đổi giữa các thiết bị trong các mạng IP khác nhau phải được chuyển tiếp đến một cổng mặc định.
+   * Đúng (True)
+ * Câu hỏi: Đúng hay sai? Phần bên phải nhất của địa chỉ IP được sử dụng để xác định mạng mà một thiết bị thuộc về.
+   * Sai (False)
+ * Câu hỏi: Cái gì được sử dụng để xác định phần mạng của địa chỉ IPv4?
+   * Mặt nạ mạng con (subnet mask)
+ * Câu hỏi: Những câu lệnh nào sau đây là đúng về địa chỉ lớp mạng và lớp liên kết dữ liệu? (Chọn ba.)
+   * Địa chỉ lớp liên kết dữ liệu là vật lý và địa chỉ lớp mạng là logic.
+   * Địa chỉ lớp mạng có độ dài 32 hoặc 128 bit.
+ * Câu hỏi: Thứ tự của hai địa chỉ trong khung liên kết dữ liệu là gì?
+   * MAC đích, MAC nguồn (destination MAC, source MAC)
+ * Câu hỏi: Đúng hay sai? Địa chỉ liên kết dữ liệu là vật lý nên chúng không bao giờ thay đổi trong khung liên kết dữ liệu từ nguồn đến đích.
+   * Sai (False)
+Câu hỏi trắc nghiệm mô-đun - Giao thức và Mô hình (Module Quiz - Protocols and Models)
+ * Câu hỏi: Ba từ viết tắt/chữ viết tắt nào đại diện cho các tổ chức tiêu chuẩn? (Chọn ba.)
+   * IEEE (Institute of Electrical and Electronics Engineers)
+   * IANA (Internet Assigned Numbers Authority)
+   * IETF (Internet Engineering Task Force)
+ * Câu hỏi: Loại giao tiếp nào sẽ gửi một thông báo đến tất cả các thiết bị trên mạng cục bộ?
+   * Broadcast
+ * Câu hỏi: Trong giao tiếp máy tính, mục đích của mã hóa thông báo là gì?
+   * Để chuyển đổi thông tin sang dạng thích hợp để truyền.
+ * Câu hỏi: Tùy chọn gửi thông báo nào được sử dụng khi tất cả các thiết bị cần nhận cùng một thông báo đồng thời?
+   * Broadcast
+ * Câu hỏi: Hai lợi ích của việc sử dụng mô hình mạng phân lớp là gì? (Chọn hai.)
+   * Nó ngăn chặn công nghệ ở một lớp ảnh hưởng đến các lớp khác.
+   * Nó hỗ trợ thiết kế giao thức.
+ * Câu hỏi: Mục đích của các giao thức trong truyền thông dữ liệu là gì?
+   * Cung cấp các quy tắc cần thiết cho một loại giao tiếp cụ thể xảy ra.
+ * Câu hỏi: Địa chỉ logic nào được sử dụng để gửi dữ liệu đến một mạng từ xa?
+   * Địa chỉ IP đích (destination IP address)
+ * Câu hỏi: Thuật ngữ chung nào được sử dụng để mô tả một mảnh dữ liệu ở bất kỳ lớp nào của mô hình mạng?
+   * Đơn vị dữ liệu giao thức (protocol data unit)
+ * Câu hỏi: Hai giao thức nào hoạt động ở lớp internet? (Chọn hai.)
+   * ICMP (Internet Control Message Protocol)
+   * IP (Internet Protocol)
+ * Câu hỏi: Lớp nào của mô hình OSI định nghĩa các dịch vụ để phân đoạn và lắp ráp lại dữ liệu cho các giao tiếp riêng lẻ giữa các thiết bị đầu cuối?
+   * Truyền tải (transport)
+ * Câu hỏi: Loại giao tiếp nào sẽ gửi một thông báo đến một nhóm các đích máy chủ đồng thời?
+   * Multicast
+ * Câu hỏi: Quá trình nào được sử dụng để nhận dữ liệu được truyền và chuyển đổi nó thành một thông báo có thể đọc được?
+   * Giải mã (decoding)
+ * Câu hỏi: Điều gì được thực hiện với một gói IP trước khi nó được truyền qua phương tiện vật lý?
+   * Nó được đóng gói trong một khung lớp 2.
+ * Câu hỏi: Quá trình nào được sử dụng để đặt một thông báo bên trong một thông báo khác để truyền từ nguồn đến đích?
+   * Đóng gói (encapsulation)
+ * Câu hỏi: Một máy khách web đang gửi yêu cầu một trang web đến máy chủ web. Từ góc độ của máy khách, thứ tự đúng của ngăn xếp giao thức được sử dụng để chuẩn bị yêu cầu truyền là gì?
+   * HTTP, TCP, IP, Ethernet
+Câu hỏi trắc nghiệm mô-đun - Lớp vật lý (Module Quiz - Physical Layer)
+ * Câu hỏi: Một quản trị viên mạng đang khắc phục sự cố kết nối trên một máy chủ. Sử dụng một thiết bị kiểm tra, quản trị viên nhận thấy rằng các tín hiệu được tạo bởi NIC của máy chủ bị méo và không thể sử dụng được. Lỗi được phân loại ở lớp nào của mô hình OSI?
+   * Lớp vật lý (physical layer)
+ * Câu hỏi: Loại cáp nào được sử dụng để kết nối cổng nối tiếp của máy trạm với cổng console của bộ định tuyến Cisco?
+   * Rollover (rollover)
+ * Câu hỏi: Tại sao hai sợi cáp quang được sử dụng cho một kết nối cáp quang duy nhất?
+   * Chúng cho phép kết nối full-duplex.
+ * Câu hỏi: Thủ tục nào được sử dụng để giảm ảnh hưởng của nhiễu xuyên âm trong cáp đồng?
+   * Xoắn các cặp dây mạch đối diện với nhau.
+ * Câu hỏi: Một lợi thế của việc sử dụng cáp quang thay vì cáp đồng là gì?
+   * Nó có thể truyền tín hiệu xa hơn nhiều so với cáp đồng.
+ * Câu hỏi: Một quản trị viên mạng đang thiết kế một cơ sở hạ tầng mạng mới bao gồm cả kết nối có dây và không dây. Trong tình huống nào thì kết nối không dây được khuyến nghị?
+   * Thiết bị đầu cuối cần tính di động khi kết nối với mạng.
+ * Câu hỏi: Loại cáp UTP nào được sử dụng để kết nối PC với cổng chuyển mạch?
+   * Thẳng (straight-through)
+ * Câu hỏi: Định nghĩa của băng thông là gì?
+   * Lượng dữ liệu có thể chảy từ nơi này đến nơi khác trong một khoảng thời gian nhất định.
+ * Câu hỏi: Mục đích của lớp vật lý OSI là gì?
+   * Truyền bit qua phương tiện cục bộ.
+ * Câu hỏi: Đặc điểm nào mô tả nhiễu xuyên âm?
+   * Sự biến dạng của các thông báo được truyền từ các tín hiệu được mang trong các dây liền kề.
+ * Câu hỏi: Tổ chức tiêu chuẩn nào giám sát việc phát triển các tiêu chuẩn WLAN?
+   * IEEE (Institute of Electrical and Electronics Engineers)
+Kiểm tra kiến thức của bạn - Hệ thống số nhị phân (Binary Number System)
+ * Câu hỏi: Địa chỉ IP 192.168.11.10 tương đương với số nhị phân nào?
+   * 11000000.10101000.00001011.00001010
+ * Câu hỏi: Địa chỉ IP 172.16.31.30 tương đương với số nhị phân nào?
+   * 10101100.00010000.00011111.00011110
+Kiểm tra kiến thức của bạn - Hệ thống số thập lục phân (Hexadecimal Number System)
+ * Câu hỏi: Số thập lục phân tương đương với 202 là gì?
+   * CA
+ * Câu hỏi: Số thập lục phân tương đương với 254 là gì?
+   * FE
+ * Câu hỏi: Số thập phân tương đương với A9 là gì?
+   * 169
+ * Câu hỏi: Số thập phân tương đương với 7D là gì?
+   * 125
+Câu hỏi trắc nghiệm mô-đun - Hệ thống số (Module Quiz - Number Systems)
+ * Câu hỏi: Biểu diễn nhị phân cho số thập phân 173 là gì?
+   * 10101101
+ * Câu hỏi: Với địa chỉ nhị phân 11101100 00010001 00001100 00001010, địa chỉ này đại diện cho địa chỉ nào ở định dạng thập phân có dấu chấm?
+   * 236.17.12.10
+ * Câu hỏi: Có bao nhiêu bit nhị phân tồn tại trong một địa chỉ IPv6?
+   * 128
+ * Câu hỏi: Số nhị phân tương đương với số thập phân 232 là gì?
+   * 11101000
+ * Câu hỏi: Hai câu lệnh nào là đúng về địa chỉ IPv4 và IPv6? (Chọn hai.)
+   * Địa chỉ IPv6 được biểu diễn bằng các số thập lục phân.
+   * Địa chỉ IPv4 có độ dài 32 bit.
+ * Câu hỏi: Định dạng địa chỉ IPv4 nào được tạo ra để người dùng dễ sử dụng và được thể hiện dưới dạng 201.192.1.14?
+   * Thập phân có dấu chấm (dotted decimal)
+ * Câu hỏi: Biểu diễn thập phân có dấu chấm của địa chỉ IPv4 11001011.00000000.01110001.11010011 là gì?
+   * 203.0.113.211
+ * Câu hỏi: Số thập phân tương đương với số nhị phân 10010101 là gì?
+   * 149
+ * Câu hỏi: Số thập phân tương đương với số hex 0x3F là gì?
+   * 63
+ * Câu hỏi: Biểu diễn thập phân có dấu chấm của địa chỉ IPv4 được biểu diễn dưới dạng chuỗi nhị phân 00001010.01100100.00010101.00000001 là gì?
+   * 10.100.21.1
+ * Câu hỏi: Số thập phân tương đương với 0xC9 là gì?
+   * 201
+ * Câu hỏi: Số thập lục phân nào là hợp lệ?
+   * f
+ * Câu hỏi: Biểu diễn nhị phân của 0xCA là gì?
+   * 11001010
+ * Câu hỏi: Một địa chỉ IPv4 có bao nhiêu bit?
+   * 32
+Kiểm tra kiến thức của bạn - Mục đích của lớp liên kết dữ liệu (Purpose of the Data Link Layer)
+ * Câu hỏi: Tên khác của lớp liên kết dữ liệu OSI là gì?
+   * Lớp 2 (Layer 2)
+ * Câu hỏi: Lớp liên kết dữ liệu LAN/MAN IEEE 802 bao gồm hai lớp con nào? (Chọn hai.)
+   * Kiểm soát liên kết logic (Logical Link Control)
+   * Kiểm soát truy cập phương tiện (Media Access Control)
+ * Câu hỏi: Chức năng lớp 2 nào mà một bộ định tuyến thực hiện? (Chọn ba.)
+   * Chấp nhận một khung từ một phương tiện.
+   * Giải đóng gói khung.
+   * Tham chiếu bảng định tuyến lớp 3 của nó để tìm mạng đích phù hợp.
+Kiểm tra kiến thức của bạn - Cấu trúc liên kết (Topologies)
+ * Câu hỏi: Cấu trúc liên kết nào hiển thị địa chỉ IP của lớp thiết bị mạng?
+   * Cấu trúc liên kết logic (logical topology)
+ * Câu hỏi: Cấu trúc liên kết LAN nào là một cấu trúc liên kết lai?
+   * Extended star
+ * Câu hỏi: Phương thức kiểm soát truy cập phương tiện nào được sử dụng trong các mạng LAN Ethernet cũ?
+   * Carrier sense multiple access/collision detection (CSMA/CD)
+Kiểm tra kiến thức của bạn - Khung liên kết dữ liệu (Data Link Frame)
+ * Câu hỏi: Lớp liên kết dữ liệu thêm gì vào một gói lớp 3 để tạo thành một khung? (Chọn hai.)
+   * Tiêu đề (header)
+   * Đoạn cuối (trailer)
+ * Câu hỏi: Sắp xếp nào liệt kê các trường địa chỉ lớp 2 và lớp 3 theo đúng thứ tự?
+   * Địa chỉ NIC nguồn, địa chỉ NIC đích, địa chỉ IP đích, địa chỉ IP nguồn.
+Câu hỏi trắc nghiệm mô-đun - Lớp liên kết dữ liệu (Module Quiz - Data Link Layer)
+ * Câu hỏi: Định danh nào được sử dụng ở lớp liên kết dữ liệu để xác định duy nhất một thiết bị Ethernet?
+   * Địa chỉ MAC (MAC address)
+ * Câu hỏi: Thuộc tính nào của NIC sẽ đặt nó ở lớp liên kết dữ liệu của mô hình OSI?
+   * Địa chỉ MAC (MAC address)
+ * Câu hỏi: Điều gì là đúng về các cấu trúc liên kết vật lý và logic?
+   * Cấu trúc liên kết logic đề cập đến cách mạng truyền dữ liệu giữa các thiết bị.
+ * Câu hỏi: Phương pháp nào được sử dụng để quản lý quyền truy cập dựa trên tranh chấp trên mạng không dây?
+   * CSMA/CA (Carrier Sense Multiple Access/Collision Avoidance)
+ * Câu hỏi: Một kỹ thuật viên đã được yêu cầu phát triển một cấu trúc liên kết vật lý cho một mạng cung cấp mức độ dự phòng cao. Cấu trúc liên kết vật lý nào yêu cầu mỗi nút được gắn vào mọi nút khác trên mạng?
+   * Mesh
+ * Câu hỏi: Câu lệnh nào mô tả chế độ truyền dữ liệu half-duplex?
+   * Dữ liệu được truyền qua mạng chảy theo một hướng tại một thời điểm.
+ * Câu hỏi: Phương thức kiểm soát truy cập phương tiện lớp liên kết dữ liệu nào mà Ethernet sử dụng với các hub Ethernet cũ?
+   * CSMA/CD (Carrier Sense Multiple Access/Collision Detection)
+ * Câu hỏi: Hai lớp con của lớp liên kết dữ liệu mô hình OSI là gì? (Chọn hai.)
+   * MAC (Media Access Control)
+   * LLC (Logical Link Control)
+ * Câu hỏi: Loại cấu trúc liên kết vật lý nào có thể được tạo bằng cách kết nối tất cả các cáp Ethernet với một thiết bị trung tâm?
+   * Star
+Kiểm tra kiến thức của bạn - Tốc độ và phương pháp chuyển tiếp của bộ chuyển mạch (Switch Speeds and Forwarding Methods)
+ * Câu hỏi: Hai phương pháp nào để chuyển đổi dữ liệu giữa các cổng trên một bộ chuyển mạch? (Chọn hai.)
+   * Chuyển mạch cắt xuyên (cut-through switching)
+   * Chuyển mạch lưu trữ và chuyển tiếp (store-and-forward switching)
+ * Câu hỏi: Phương pháp chuyển mạch nào có thể được triển khai bằng cách sử dụng chuyển mạch nhanh (fast-forward switching) hoặc chuyển mạch không phân mảnh (fragment-free switching)?
+   * Chuyển mạch cắt xuyên (cut-through switching)
+ * Câu hỏi: Hai loại kỹ thuật bộ đệm bộ nhớ nào được sử dụng bởi các bộ chuyển mạch? (Chọn hai.)
+   * Bộ đệm bộ nhớ dựa trên cổng (port-based memory buffering)
+   * Bộ đệm bộ nhớ chia sẻ (shared memory buffering)
+Câu hỏi trắc nghiệm mô-đun - Chuyển mạch Ethernet (Module Quiz - Ethernet Switching)
+ * Câu hỏi: Câu lệnh nào mô tả một đặc điểm của địa chỉ MAC?
+   * Chúng phải là duy nhất trên toàn cầu.
+ * Câu hỏi: Một máy chủ trên mạng Ethernet sẽ làm gì nếu nó nhận được một khung có địa chỉ MAC đích unicast không khớp với địa chỉ MAC của chính nó?
+   * Nó sẽ loại bỏ khung.
+ * Câu hỏi: Thiết bị mạng nào đưa ra quyết định chuyển tiếp dựa trên địa chỉ MAC đích có trong khung?
+   * Switch
+ * Câu hỏi: Thiết bị mạng nào có chức năng chính là gửi dữ liệu đến một đích cụ thể dựa trên thông tin tìm thấy trong bảng địa chỉ MAC?
+   * Switch
+ * Câu hỏi: Thông tin địa chỉ nào được ghi lại bởi một bộ chuyển mạch để xây dựng bảng địa chỉ MAC của nó?
+   * Địa chỉ lớp 2 nguồn của các khung đến.
+Kiểm tra kiến thức của bạn - Đặc điểm IP (IP Characteristics)
+ * Câu hỏi: Lớp OSI nào gửi các phân đoạn để được đóng gói trong một gói IPv4 hoặc IPv6?
+   * Lớp truyền tải (transport layer)
+ * Câu hỏi: Lớp nào chịu trách nhiệm lấy một gói IP và chuẩn bị nó để truyền qua phương tiện truyền thông?
+   * Lớp liên kết dữ liệu (data link layer)
+ * Câu hỏi: Phương thức gửi nào không đảm bảo rằng gói tin sẽ được gửi đầy đủ mà không có lỗi?
+   * Không kết nối (connectionless)
+Kiểm tra kiến thức của bạn - Gói IPv4 & IPv6 (IPv4 & IPv6 Packet)
+ * Câu hỏi: Hai trường được tham chiếu phổ biến nhất trong tiêu đề gói IPv4 cho biết gói đến từ đâu và đi đâu? (Chọn hai.)
+   * Địa chỉ IP đích (destination IP address)
+   * Địa chỉ IP nguồn (source IP address)
+ * Câu hỏi: Ba vấn đề chính liên quan đến IPv4 là gì? (Chọn ba.)
+   * Cạn kiệt địa chỉ IP (IP address depletion)
+   * Tăng độ phức tạp của mạng và mở rộng bảng định tuyến Internet (increased network 
