@@ -1,0 +1,171 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BTH3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.OutputEncoding = Encoding.UTF8;
+            CongNhan cn = new CongNhan(7, "Hồng Anh", 35, false, "Châu Thành-Trà Vinh");
+            cn.hienthi();
+            CongNhan cn1 = new CongNhan(7, "Minh Anh", 56, false, "Cầu Kè-Trà Vinh");
+            bool kq = cn.Equals(cn1);
+
+            KySu ks = new KySu("CNTT", "Như Ngọc", 37, false, "Tiểu Cần-Trà Vinh");
+            ks.hienthi();
+            KySu ks1 = new KySu("CNTT", "Tấn Minh", 20, true, "Càng Long-Trà Vinh");
+            bool kq1 = ks.Equals(ks1);
+
+            NhanVien nv = new NhanVien("Lao công", "Ngoc Hoa", 55, false, "Châu Thành-Trà Vinh");
+            nv.hienthi();
+            NhanVien nv1 = new NhanVien("Lễ tân", "Bình Mai", 38, true, "Tiểu Cần-Trà Vinh");
+            bool kq2 = nv.Equals(nv1);
+
+            Console.WriteLine(kq);
+            Console.WriteLine(kq1);
+            Console.WriteLine(kq2);
+
+            Console.WriteLine(cn.ToString());
+            Console.WriteLine(ks.ToString());
+            Console.WriteLine(nv.ToString());
+            Console.ReadLine();
+           
+        }
+    }
+}
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BTH3
+{
+    class NhanVien:NhanSu
+    {
+            private string congviec;
+            public NhanVien(string congviec, string ht, int tuoi, bool gt, string dc) : base(ht, tuoi, gt, dc)
+            {
+                this.congviec = congviec;
+            }
+            public override void hienthi()
+            {
+                base.hienthi();
+                Console.WriteLine("Thuoc tinh rieng " + this.congviec);
+            }
+        
+    }
+}
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BTH3
+{
+    class NhanSu
+    {
+        private string hoten;
+        private int tuoi;
+        private bool gioitinh;
+        private string diachi;
+
+        public NhanSu(string hoten, int tuoi, bool gioitinh, string diachi)
+        {
+            this.hoten = hoten;
+            this.tuoi = tuoi;
+            this.gioitinh = gioitinh;
+            this.diachi = diachi;
+        }
+
+        public NhanSu()
+        {
+            this.hoten = "";
+            this.tuoi = 0;
+            this.gioitinh = true;
+            this.diachi = "";
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj is NhanSu)
+            {
+                NhanSu su = (NhanSu)obj;
+                return
+                    hoten == su.hoten &&
+                    tuoi == su.tuoi &&
+                    gioitinh == su.gioitinh &&
+                    diachi == su.diachi;
+            }
+            return base.Equals(obj);
+        }
+
+        public virtual void hienthi()
+        {
+            Console.WriteLine($"Họ và tên:" + this.hoten);
+            Console.WriteLine($"Tuổi:" + this.tuoi);
+            Console.WriteLine($"Giới tính:" + this.gioitinh);
+            Console.WriteLine($"Địa chỉ:" + this.diachi);
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
+
+
+    }
+}
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BTH3
+{
+    class KySu:NhanSu
+    {
+        private string congviec;
+        public KySu(string congviec, string ht, int tuoi, bool gt, string dc) : base(ht, tuoi, gt, dc)
+            {
+            this.congviec = congviec;
+        }
+        public override void hienthi()
+        {
+            base.hienthi();
+            Console.WriteLine("Thuoc tinh rieng " + this.congviec);
+        }
+    }
+}
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BTH3
+{
+    class CongNhan:NhanSu
+    {
+        private int bac;
+
+        public CongNhan(int bac, string ht, int tuoi, bool gt, string dc) : base(ht, tuoi, gt, dc)
+        {
+            this.bac=bac;
+        }
+        public override void hienthi()
+        {
+            base.hienthi();
+            Console.WriteLine("Thuộc tính riêng" + this.bac);
+        }
+
+
+    }
+}
