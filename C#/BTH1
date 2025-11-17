@@ -1,0 +1,94 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BTH1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+            student st = new student();
+            st = st.nhap1sv();
+            st.show();
+            Console.ReadLine();
+        }
+    }
+}
+namespace BTH1
+{
+    class student
+    {
+        private int sid;
+        private string tensv;
+        private string khoa;
+        private float diemtb;
+
+        public student()
+        {
+            sid = 1;
+            this.tensv = " ";
+            this.khoa = " ";
+            this.diemtb = 5;
+        }
+
+        public int studentid
+        {
+            get { return this.sid; }
+            set { this.sid = value; }
+        }
+
+        public student (student stu)
+        {
+            sid = stu.sid;
+            this.tensv = stu.tensv;
+            this.khoa = stu.khoa;
+            this.diemtb = stu.diemtb;
+        }
+
+        public string name
+        {
+            get { return this.tensv; }
+            set { this.tensv = value; }
+        }
+
+        public string faculty
+        {
+            get { return this.khoa; }
+            set { this.khoa = value; }
+        }
+
+        public float mark
+        {
+            get { return this.diemtb; }
+            set { this.diemtb = value; }
+
+        }
+
+        public student nhap1sv()
+        {
+            student st = new student();
+            Console.Write("nhap vao ma sinh vien: ");
+            st.studentid = int.Parse(Console.ReadLine());
+            Console.WriteLine("Nhap vao ten sinh vien:");
+            st.name = String.Format(Console.ReadLine());
+            Console.Write("nhap vao ten khoa: ");
+            st.faculty = Console.ReadLine();
+            Console.WriteLine("Nhap vao diem sinh vien:");
+            st.mark = float.Parse(Console.ReadLine());
+            return st;
+        }
+
+        public void show()
+        {
+            Console.WriteLine("MSSV:{0}",this.sid);
+            Console.WriteLine("TenSV:{0}",this.name);
+            Console.WriteLine("Khoa:{0}", this.faculty);
+            Console.WriteLine("DiemTB:", this.mark);
+        }
+
+    }
+}
