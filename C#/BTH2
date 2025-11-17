@@ -1,0 +1,120 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BTH2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.OutputEncoding = Encoding.UTF8;
+            Phanso ps1 = new Phanso(3, 4);
+            Phanso ps2 = new Phanso(4, 3);
+            Console.Write("Phân số 1:"); ps1.xuat();
+            Console.Write("Phân số 2:"); ps2.xuat();
+            Phanso psCong = ps1.Cong(ps2);
+            Phanso psTru = ps1.Tru(ps2);
+            Phanso psNhan = ps1.Nhan(ps2);
+            Phanso psChia = ps1.Chia(ps2);
+            Console.Write("Cộng hai phân số:"); psCong.xuat();
+            Console.Write("Trừ hai phân số:"); psTru.xuat();
+            Console.Write("Nhân hai phân số:"); psNhan.xuat();
+            Console.Write("Chia hai phân số:"); psChia.xuat();
+            Console.ReadLine();
+        }
+    }
+}
+using System;
+using System.Text;
+
+namespace BTH2
+{
+    class Phanso
+    {
+        private int _tuso, _mauso;
+
+        public Phanso()
+        {
+            this._tuso = 0;
+            this._mauso = 1;
+        }
+
+        public Phanso(int tuso, int mauso)
+        {
+            if (mauso == 0)
+            {
+                throw new ArgumentException("Mẫu số phải khác 0.", nameof(mauso));
+            }
+            this._tuso = tuso;
+            this._mauso = mauso;
+        }
+
+        public int Tuso
+        {
+            get { return this._tuso; }
+            set { this._tuso = value; }
+        }
+
+        public int Mauso
+        {
+            get { return this._mauso; }
+            set
+            {
+                if (value == 0)
+                {
+                    throw new ArgumentException("Mẫu số phải khác 0.", nameof(value));
+                }
+                this._mauso = value;
+            }
+        }
+
+        public void nhap()
+        {
+            Console.Write("Nhap tu so: ");
+            _tuso = int.Parse(Console.ReadLine());
+
+            do
+            {
+                Console.Write("Nhap mau so: ");
+                _mauso = int.Parse(Console.ReadLine());
+                if (_mauso == 0) Console.WriteLine("Mau so phai la mot so khac 0! Vui lòng nhập lại.");
+            } while (_mauso == 0);
+        }
+
+        public void xuat()
+        {
+            Console.WriteLine($"{_tuso}/{_mauso}");
+        }
+
+        public Phanso Cong(Phanso ps2)
+        {
+            int tuso = this._tuso * ps2._mauso + ps2._tuso * this._mauso;
+            int mauso = this._mauso * ps2._mauso;
+            return new Phanso(tuso, mauso);
+        }
+
+        public Phanso Tru(Phanso ps2)
+        {
+            int tuso = this._tuso * ps2._mauso - ps2._tuso * this._mauso;
+            int mauso = this._mauso * ps2._mauso;
+            return new Phanso(tuso, mauso);
+        }
+
+        public Phanso Nhan(Phanso ps2)
+        {
+            int tuso = this._tuso * ps2._tuso;
+            int mauso = this._mauso * ps2._mauso;
+            return new Phanso(tuso, mauso);
+        }
+
+        public Phanso Chia(Phanso ps2)
+        {
+            int tuso = this._tuso * ps2._mauso;
+            int mauso = this._mauso * ps2._tuso;
+            return new Phanso(tuso, mauso);
+        }
+    }
+}
